@@ -1,0 +1,18 @@
+{% extends 'base.html' %} {% block title %} Enter {% endblock %} {% block body %}
+<style>
+    #EnterFormCard {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        /* Параметры тени */
+        padding: 10px;
+    }
+</style>
+<div class="col-md-8 offset-md-2 card " id="EnterFormCard">
+    <form action="/enter" method='post'><br><br>
+        <input type="nick" name="name" id="name" class="form-control d-block mx-auto w-50" placeholder="Name"><br>
+        <input type="email" name="email" id="email" class="form-control d-block mx-auto w-50" placeholder="Email"><br>
+        <input type="password" name="password" id="password" class="form-control d-block mx-auto w-50" placeholder="Password"><br><br>
+        <input class="w-50 btn btn-primary d-block mx-auto" type="submit" value="Send"><br>
+    </form>
+</div>
+
+{% endblock %}
