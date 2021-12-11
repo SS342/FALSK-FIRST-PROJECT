@@ -1,0 +1,4 @@
+{% extends 'base.html' %} {% block title %} adm-panel {% endblock %} {% block body %}
+<h1>ADMIN PANEL</h1>
+<a type="button" class="btn btn-outline-danger" href="/home/admin/{{ name }}/{{ email }}/{{ password }}/create-article-post">создать статью</a>
+<a type="button" class="btn btn-outline-warning" href="/home/admin/{{ name }}/{{ email }}/{{ password }}/create-blog-post">созать пост в блоге</a> {% endblock %}
